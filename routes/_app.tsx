@@ -1,16 +1,17 @@
-import { AppProps } from "$fresh/server.ts";
+import { PageProps } from "$fresh/server.ts";
+import Layout from "./test/Layout.tsx";
 
-export default function App({ Component }: AppProps) {
+export default function App(props: PageProps) {
   return (
-    <html lang="es">
+    <html>
       <head>
-        <meta charSet="utf-8" />
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Rick & Fresh</title>
         <link rel="stylesheet" href="/styles.css" />
       </head>
       <body>
-        <Component />
+        <Layout {...props} />
       </body>
     </html>
   );

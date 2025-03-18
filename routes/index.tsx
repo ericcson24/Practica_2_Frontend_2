@@ -1,12 +1,14 @@
-
 import { PageProps } from "$fresh/server.ts";
-import Layout from "../components/Layout.tsx";
 
-export default function Home(props: PageProps) {
+export default function Home(_props: PageProps) {
   return (
-    <Layout>
+    <div>
       <h1>Diccionario Inglés</h1>
-      <a href="/search">Buscar una palabra</a>
-    </Layout>
+      <p>
+        Bienvenido a la práctica de frontend con Fresh. Usa el formulario para
+        buscar palabras en el diccionario.
+      </p>
+      <a href="/test/page1">Ir al formulario de búsqueda</a>
+    </div>
   );
 }
