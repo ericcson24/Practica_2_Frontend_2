@@ -1,0 +1,202 @@
+/* 🌟 1. ESTILOS GENERALES */
+body {
+  background-color: rgba(255, 255, 225, 0.185);
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-family: Comic Sans MS, sans-serif;
+}
+
+/* 🌟 2. CONTENEDOR PRINCIPAL */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: rgb(75, 75, 75);
+}
+
+/* 🌟 3. TARJETAS DE ELEMENTOS */
+.card {
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+  border: 2px solid #a09e9e;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de elementos */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 80%;
+  max-width: 900px;
+}
+
+/* 🌟 4. SECCIÓN DE DETALLES */
+.details {
+  text-align: center;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details img {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #a09e9e;
+  margin-bottom: 15px;
+}
+
+.details p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 5px 0;
+}
+
+/* 🌟 5. BOTONES */
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  background-color: #575757;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* 🌟 6. LISTA */
+.list {
+  width: 80%;
+  max-width: 500px;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(240, 240, 240, 0.9);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.list h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.list ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.list li {
+  padding: 10px;
+  font-size: 1rem;
+}
+
+/* 🌟 7. ESTILOS PARA PHONETICS Y MEANINGS */
+.phonetics-box, .meaning-box {
+  width: 80%;
+  max-width: 500px;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(240, 240, 240, 0.9);
+  text-align: center;
+
+}
+
+.phonetics-box h3, .meaning-box h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.phonetics-box p, .meaning-box p {
+  font-size: 1rem;
+  color: #4a4a4a;
+  margin: 5px 0;
+}
+
+/* Estilos para la lista de significados */
+.meaning-list {
+  list-style: none;
+  padding: 0;
+}
+
+.meaning-item {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.meaning-item:last-child {
+  border-bottom: none;
+}
+
+/* 🌟 8. ESTILOS GENERALES DE TEXTO */
+.p-4 {
+  padding: 4rem;
+}
+
+.texto-lg {
+  font-size: 1.25rem;
+}
+
+.fuente-negrita {
+  font-weight: bold;
+}
+
+.borde-abajo {
+  border-bottom: 1px solid #000000;
+}
+
+.pb-2 {
+  padding-bottom: 4rem;
+}
+
+.texto-gris-700 {
+  color: #4a4a4a;
+}
+
+.texto-gris-500 {
+  color: #9a9a9a;
+}
+
+.texto-pequeño {
+  font-size: 0.875rem;
+}
+
+.margen-superior-2 {
+  margin-top: 0.5rem;
+}
