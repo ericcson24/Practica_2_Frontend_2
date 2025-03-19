@@ -9,7 +9,7 @@ const Layout = (props: PageProps) => {
         <h1>Diccionario</h1>
         <nav className="button-container">
           <a href="/" className="button">Inicio</a>
-          <a href="./test/page1" className="button">Ir al formulario de búsqueda</a>
+          <a href="../test/page1" className="button">Ir al formulario de búsqueda</a>
         </nav>
       </header>
       <main>
