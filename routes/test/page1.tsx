@@ -42,33 +42,34 @@ export const handler: Handlers = {
     },
   };
 
-const WordDetailsPage = ({ data }: PageProps<WordDetailsData>) => {
-  // Check if the current route is the index page
-  if (typeof window !== "undefined" && window.location.pathname === "/") {
-    return null; // Do not render anything if on the index page
-  }
-
-  return (
-    <div>
-      <h1>Buscar Palabra</h1>
-      <form method="GET" action="/test/page1">
-        <input
+  const WordDetailsPage = ({ data }: PageProps<WordDetailsData>) => {
+    if (typeof window !== "undefined" && window.location.pathname === "/") {
+      return null; 
+    }
+  
+    return (
+      <div>
+        <h1>Buscar Palabra</h1>
+        <form method="GET" action="/test/page1" className="search-container">
+          <input
             type="text"
             name="word"
             placeholder="Escribe una palabra en inglés"
-        />
-        <button type="submit">Buscar</button>
+            className="search-input"
+          />
+          <button type="submit" className="button">Buscar</button>
         </form>
-      {data && "error" in data && <p style={{ color: "red" }}>{data.error}</p>}
-      {data && !("error" in data) && (
-        <div>
-          <h2>Detalles para: {data.word}</h2>
-          <Phonetics phonetics={data.phonetics} />
-          <Meanings meanings={data.meanings} />
-        </div>
-      )}
-    </div>
-  );
-};
+        {data && "error" in data && <p style={{ color: "red" }}>{data.error}</p>}
+        {data && !("error" in data) && (
+          <div>
+            <h2>Detalles para: {data.word}</h2>
+            <Phonetics phonetics={data.phonetics} />
+            <Meanings meanings={data.meanings} />
+          </div>
+        )}
+      </div>
+    );
+  };
+  
 
 export default WordDetailsPage;

@@ -8,7 +8,7 @@ export default function Home(_props: PageProps) {
         Bienvenido a la práctica de frontend con Fresh. Usa el formulario para
         buscar palabras en el diccionario.
       </p>
-      <a href="/test/page1">Ir al formulario de búsqueda</a>
+      <a href="./test/page1" className="button">Ir al formulario de búsqueda</a>
     </div>
   );
 }

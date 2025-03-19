@@ -5,14 +5,14 @@ export default function Meanings(props: {
   }>;
 }) {
   return (
-    <div>
+    <div className="meanings-container">
       <h3>Meanings</h3>
       {props.meanings.map((meaning, index) => (
-        <div key={index}>
+        <div key={index} className="meaning-item">
           <h4>{meaning.partOfSpeech}</h4>
           <ul>
             {meaning.definitions.map((definition, defIndex) => (
-              <li key={defIndex}>
+              <li key={defIndex} className="definition-item">
                 <p>{definition.definition}</p>
                 {definition.example && (
                   <p>
